@@ -1,10 +1,10 @@
-# React + Next.js Daily Drills (21 Days)
+# Daily React + Next.js Practice (21 Days)
 
-Belajar **React → Next.js** secara bertahap sampai bikin aplikasi **CRUD** dengan database.  
-Target: 21 hari konsisten, progress harian + Pull Request kecil yang bermakna.
+Learn React → Next.js gradually until you build a CRUD application with a database.
+Goal: 21 days of consistency, daily progress + small, meaningful Pull Requests.
 
-## 🎯 Tujuan
-- Kuasai JSX, Components, Props, State, Events, dan Hooks.
-- Pahami Next.js (App Router, SSR/SSG/CSR, API Routes).
-- Bangun **Final Project CRUD** (Next.js + Prisma + SQLite/Postgres).
-- Latih kebiasaan commit & PR yang rapi dan terukur.~
+## 🎯 Objectives
+- Master JSX, Components, Props, State, Events, and Hooks.
+- Understand Next.js (Application Router, SSR/SSG/CSR, API Routes).
+- Build a CRUD Final Project (Next.js + Prisma + SQLite/Postgres).
+- Practice clean and measurable commit and PR habits.
