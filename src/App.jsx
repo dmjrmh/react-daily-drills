@@ -1,20 +1,11 @@
-import './App.css'
-import Header from './components/Header'
-import Card from './components/Card'
-import Footer from './components/Footer'
+import './index.css'
+import Day1View from './views/Day1View'
+import Day2View from './views/Day2View'
 
 function App() {
 
-  return (
-    <>
-      <Header />
-      <main style={{ padding: "1rem" }}>
-        <Card title="Day 1 - JSX" description="Learning JSX & creating basic components."/>
-        <Card title="Day 1 - Props" description="Passing data into components"/>
-      </main>
-      <Footer />
-    </>
-  )
+  const day = 2;
+  return day === 1 ? <Day1View /> : <Day2View />;
 }
 
 export default App
