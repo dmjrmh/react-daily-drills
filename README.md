@@ -23,3 +23,11 @@ git commit -m "feat: basic JSX & components"
 git push -u origin day-1-jsx
 # open PR from day-1-jsx → development
 ```
+
+## 📚 Daily Learnings
+
+### Day 1 — JSX & Basic Components
+- Learned the basics of **JSX** syntax and the rule of single return elements.  
+- Practiced using **fragments** (`<>...</>`) to wrap multiple elements.  
+- Created three components (`Header`, `Card`, `Footer`) and rendered them inside `App.jsx`.  
+- Output: simple UI with header, two cards, and a footer.  
