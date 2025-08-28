@@ -31,3 +31,9 @@ git push -u origin day-1-jsx
 - Practiced using **fragments** (`<>...</>`) to wrap multiple elements.  
 - Created three components (`Header`, `Card`, `Footer`) and rendered them inside `App.jsx`.  
 - Output: simple UI with header, two cards, and a footer.  
+
+### Day 2 — Props & Component Reusability
+- ✅ Learned how props work in React
+- ✅ Built `Greeting` component with props (`name`)
+- ✅ Built reusable `Card` component with props (`title`, `description`, `image`)
+- ✅ Linked them into `Day2View` for practice
