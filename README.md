@@ -37,3 +37,33 @@ git push -u origin day-1-jsx
 - ✅ Built `Greeting` component with props (`name`)
 - ✅ Built reusable `Card` component with props (`title`, `description`, `image`)
 - ✅ Linked them into `Day2View` for practice
+
+## Day 3 — State with useState
+
+### Goals
+- Understand primitive state vs object state in React.
+- Update state **immutably** (never mutate directly).
+- Split commits by experiment (one commit per component).
+
+### What I Built
+- **CounterToggle** — primitive `number` + show/hide toggle.
+- **ObjectStateExample** — object state (`profile`) updated immutably.
+- _(Optional)_ **ArrayStateExample** — immutable updates on arrays (map/filter).
+
+### Key Notes
+- Never mutate state directly:
+  - ❌ `state.count++`
+  - ✅ `setState(prev => prev + 1)`
+- For **objects**:
+  - ❌ `profile.city = '…'`
+  - ✅ `setProfile(prev => ({ ...prev, city: '…' }))`
+- For **nested** fields:
+  - ✅ `setUser(prev => ({ ...prev, stats: { ...prev.stats, score: prev.stats.score + 1 } }))`
+
+### PR Instructions
+Create a PR with **separate commits** per experiment:
+1. `feat(day-3): add CounterToggle (primitive state)`
+2. `feat(day-3): add ObjectStateExample (immutable object updates)`
+3. `chore(day-3): update App and README`
+
+Include screenshots in the PR.
