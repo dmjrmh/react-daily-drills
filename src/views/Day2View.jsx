@@ -1,5 +1,5 @@
-import Greeting from "../components/day-2/Greeting";
-import Card from "../components/day-2/Card";
+import Greeting from "../components/day-2-props/Greeting";
+import Card from "../components/day-2-props/Card";
 
 export default function Day2View() {
   return (
