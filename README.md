@@ -67,3 +67,36 @@ Create a PR with **separate commits** per experiment:
 3. `chore(day-3): update App and README`
 
 Include screenshots in the PR.
+
+## 📘 Day 4 — Event Handling
+
+### Objectives
+- Understand basic events in React (`onClick`, `onChange`, `onSubmit`)
+- Prevent form reloads with `event.preventDefault()`
+- Create a small form component: **SearchBar** (controlled input)
+- Explain the event flow in the PR description
+
+### Lessons Learned
+- **onClick** → immediate action (e.g., alert, open modal)
+- **onChange** → update the state of an input (controlled component)
+- **onSubmit** + `preventDefault()` → prevent form reloads
+- **useRef** → store a value between renders without triggering a rerender (e.g., `setTimeout` ID)
+- **useMemo** → store the result of a calculation (e.g., a filter list) to prevent recalculation
+- **Optional Chaining `?.()`** → Call the function only if it exists
+
+### Created Components
+- `SearchBar` → input + **Search** button, controlled input with `onSearch` callback
+- Filtering a list of mock items based on a `query`
+
+### Code Example
+```jsx
+<form onSubmit={handleSubmit}>
+<input
+type="search"
+value={query}
+onChange={handleChange}
+placeholder="Search..."
+/>
+<button type="submit">Search</button>
+</form>
+```

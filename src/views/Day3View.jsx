@@ -1,6 +1,6 @@
-import CounterToggle from "../components/day-3/CounterToggle";
-import ObjectStateExample from "../components/day-3/ObjectStateExample";
-import ArrayStateExample from "../components/day-3/ArrayStateExample";
+import CounterToggle from "../components/day-3-use-state/CounterToggle";
+import ObjectStateExample from "../components/day-3-use-state/ObjectStateExample";
+import ArrayStateExample from "../components/day-3-use-state/ArrayStateExample";
 
 export default function Day3View() {
   return (
