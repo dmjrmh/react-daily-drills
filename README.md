@@ -81,14 +81,12 @@ Include screenshots in the PR.
 ## 📘 Day 4 — Event Handling
 
 ### Objectives
-
 - Understand basic events in React (`onClick`, `onChange`, `onSubmit`)
 - Prevent form reloads with `event.preventDefault()`
 - Create a small form component: **SearchBar** (controlled input)
 - Explain the event flow in the PR description
 
 ### Lessons Learned
-
 - **onClick** → immediate action (e.g., alert, open modal)
 - **onChange** → update the state of an input (controlled component)
 - **onSubmit** + `preventDefault()` → prevent form reloads
@@ -97,12 +95,10 @@ Include screenshots in the PR.
 - **Optional Chaining `?.()`** → Call the function only if it exists
 
 ### Created Components
-
 - `SearchBar` → input + **Search** button, controlled input with `onSearch` callback
 - Filtering a list of mock items based on a `query`
 
 ### Code Example
-
 ```jsx
 <form onSubmit={handleSubmit}>
 	<input
@@ -143,3 +139,4 @@ Include screenshots in the PR.
 npm install
 npm run dev
 ```
+
