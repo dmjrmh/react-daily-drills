@@ -6,7 +6,7 @@ export default function Day5View() {
     <main className="container mx-auto max-w-3xl px-4 py-10 space-y-10">
       <header>
         <h1 className="text-2xl font-bold">Day 5 - use Effect (Lifecycle)</h1>
-        <p className="text-neutral-600">
+        <p className="text-neutral-600 mt-4">
           Examples: fetching data with cleanup, effect with deps, and logging lifecycle.
         </p>
       </header>
