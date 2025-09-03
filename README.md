@@ -140,3 +140,59 @@ npm install
 npm run dev
 ```
 
+## Day 6 — Conditional & List Rendering
+
+### Goals
+- Learn to render lists with `.map()` and use stable keys.
+- Practice conditional rendering using ternary (`? :`) and short-circuit (`&&`).
+- Understand why using array index as a key is an anti-pattern.
+
+### Components
+- `Day6List.jsx`  
+  Example of rendering list of users with stable keys (`id`).
+  - Shows online status using **short-circuit rendering**.
+  - Shows message with **ternary operator** depending on list length.
+
+### Example Code
+```jsx
+export default function Day6List() {
+  const users = [
+    { id: 1, name: "Alice", online: true },
+    { id: 2, name: "Bob", online: false },
+    { id: 3, name: "Charlie", online: true },
+  ];
+
+  return (
+    <div className="p-4">
+      <h2 className="text-xl font-bold mb-2">Day 6 — Conditional & List Rendering</h2>
+      <ul className="list-disc pl-5 space-y-1">
+        {users.map((user) => (
+          <li key={user.id} className="flex items-center gap-2">
+            <span>{user.name}</span>
+            {/* short-circuit: only show if online */}
+            {user.online && <span className="text-green-500">● Online</span>}
+          </li>
+        ))}
+      </ul>
+
+      <div className="mt-4">
+        {/* ternary operator */}
+        {users.length > 0 ? (
+          <p className="text-blue-600">We have {users.length} users</p>
+        ) : (
+          <p className="text-red-600">No users found</p>
+        )}
+      </div>
+    </div>
+  );
+}
+```
+
+// ❌ DO NOT USE INDEX AS KEY
+```
+<ul>
+  {users.map((user, index) => (
+    <li key={index}>{user.name}</li>
+  ))}
+</ul>
+```
