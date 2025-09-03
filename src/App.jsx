@@ -4,9 +4,10 @@ import Day2View from "./views/Day2View";
 import Day3View from "./views/Day3View";
 import Day4View from "./views/Day4View";
 import Day5View from "./views/Day5View";
+import Day6View from "./views/Day6View";
 
 function App() {
-	const day = 5;
+	const day = 6;
 
 	const views = {
 		1: <Day1View />,
@@ -14,10 +15,11 @@ function App() {
 		3: <Day3View />,
 		4: <Day4View />,
 		5: <Day5View />,
+		6: <Day6View />,
 	};
 
 	return (
-		<div className="min-h-screen">
+		<div className="max-h-screen">
 			{views[day] || <p className="text-center mt-10">Day not found 🚫</p>}
 		</div>
 	);
