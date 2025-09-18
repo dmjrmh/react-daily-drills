@@ -5,9 +5,10 @@ import Day3View from "./views/Day3View";
 import Day4View from "./views/Day4View";
 import Day5View from "./views/Day5View";
 import Day6View from "./views/Day6View";
+import Day7View from "./views/Day7View";
 
 function App() {
-	const day = 6;
+	const day = 7;
 
 	const views = {
 		1: <Day1View />,
@@ -16,6 +17,7 @@ function App() {
 		4: <Day4View />,
 		5: <Day5View />,
 		6: <Day6View />,
+		7: <Day7View />,
 	};
 
 	return (
