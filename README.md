@@ -196,3 +196,16 @@ export default function Day6List() {
   ))}
 </ul>
 ```
+
+# Day 7 — Mini To-Do
+
+A minimal To-Do app with React state and `localStorage` persistence.
+
+## Features
+- Create task, toggle complete, delete
+- Persist across page reloads (lazy init + save on change)
+
+## How to Run
+```bash
+npm install
+npm run dev
